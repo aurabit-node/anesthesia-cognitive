@@ -6,119 +6,131 @@
 
 <title>Anesthesia and Cognitive Outcomes | Medicus Somni</title>
 
-<meta name="description" content="An elite, evidence-based medical authority page on anesthesia and cognitive outcomes, postoperative delirium, POCD, and perioperative neuroprotection." />
-<meta name="keywords" content="anesthesia cognition, postoperative delirium, POCD, perioperative neuroprotection, regional anesthesia" />
+<meta name="description" content="An authoritative, evidence-based medical review on anesthesia and cognitive outcomes, postoperative delirium, POCD, neuroinflammation, and perioperative neuroprotection." />
+<meta name="keywords" content="anesthesia cognitive outcomes, POCD, postoperative delirium, regional anesthesia, spinal anesthesia, perioperative neuroscience" />
 <meta name="author" content="Dr Rahul Biswas, Consultant GNRC Hospital" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-<!-- MEDICAL + FAQ SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"MedicalWebPage",
-  "name":"Anesthesia and Cognitive Outcomes",
-  "author":{
-    "@type":"Physician",
-    "name":"Dr Rahul Biswas",
-    "affiliation":"GNRC Hospital"
-  },
-  "publisher":{
-    "@type":"Organization",
-    "name":"Medicus Somni"
-  },
-  "mainEntity":[{
-    "@type":"Question",
-    "name":"Does anesthesia cause long-term cognitive decline?",
-    "acceptedAnswer":{
-      "@type":"Answer",
-      "text":"Most patients recover fully, but elderly and high-risk individuals may experience postoperative delirium or cognitive dysfunction depending on vulnerability and perioperative factors."
-    }
-  }]
-}
-</script>
-
 <style>
 :root{
---bg:#f8fafc;--text:#0f172a;--card:#ffffff;
---lux:#0f766e;--gold:#14b8a6;--muted:#64748b;
-}
-body.dark{
---bg:#020617;--text:#e5e7eb;--card:#020617;
+  --dark:#020617;
+  --ink:#0f172a;
+  --lux:#0f766e;
+  --gold:#14b8a6;
+  --paper:#f8fafc;
+  --card:#ffffff;
+  --muted:#64748b;
 }
 *{box-sizing:border-box}
 body{
-margin:0;font-family:Inter,sans-serif;
-background:var(--bg);color:var(--text);
-line-height:1.9;transition:.3s;
+  margin:0;
+  font-family:Inter,sans-serif;
+  background:linear-gradient(180deg,#f8fafc,#eef2ff);
+  color:var(--ink);
+  line-height:1.85;
 }
 header{
-background:linear-gradient(120deg,#020617,#0f766e);
-color:#fff;padding:7rem 1.5rem;text-align:center;
+  background:
+    linear-gradient(120deg,rgba(2,6,23,.85),rgba(15,118,110,.85)),
+    url("assets/images/anesthesia-cognition.jpg") center/cover no-repeat;
+  color:#fff;
+  padding:6rem 1.5rem;
+  text-align:center;
 }
 header h1{
-font-family:"Playfair Display",serif;
-font-size:3.5rem;margin-bottom:1rem;
+  font-family:"Playfair Display",serif;
+  font-size:3.3rem;
+  font-weight:700;
+  margin-bottom:1rem;
 }
-header p{max-width:1000px;margin:auto;font-size:1.25rem}
+header p{
+  max-width:980px;
+  margin:0 auto;
+  font-size:1.2rem;
+  opacity:.95;
+}
 nav{
-background:#020617;padding:1rem 1.5rem;
-position:sticky;top:0;z-index:999;
+  background:rgba(2,6,23,.96);
+  padding:1rem 1.5rem;
+  position:sticky;
+  top:0;
+  z-index:999;
 }
 nav a{
-color:#e5e7eb;margin-right:1.4rem;
-text-decoration:none;font-size:.95rem;
+  color:#e5e7eb;
+  margin-right:1.4rem;
+  text-decoration:none;
+  font-weight:500;
+  font-size:.95rem;
 }
-nav a.active,nav a:hover{color:var(--gold)}
-.toggle{float:right;cursor:pointer;color:#e5e7eb}
+nav a:hover{color:var(--gold)}
 main{
-max-width:1500px;margin:auto;
-padding:4.5rem 1.5rem;
-display:grid;grid-template-columns:3fr 1fr;gap:3.5rem;
+  max-width:1400px;
+  margin:0 auto;
+  padding:4rem 1.5rem;
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  gap:3rem;
 }
 article{
-background:var(--card);border-radius:26px;
-padding:5rem;
-box-shadow:0 35px 90px rgba(0,0,0,.08);
+  background:var(--card);
+  border-radius:22px;
+  padding:4rem;
+  box-shadow:0 25px 70px rgba(0,0,0,.07);
 }
 article h2{
-font-family:"Playfair Display",serif;
-font-size:2.5rem;margin-top:3.5rem;
+  font-family:"Playfair Display",serif;
+  font-size:2.4rem;
+  margin-top:3.2rem;
+  color:var(--dark);
 }
-article h3{color:var(--lux);margin-top:2.6rem}
-article p{margin-bottom:1.4rem}
-.summary{
-background:linear-gradient(135deg,#ecfeff,#f0fdfa);
-border-left:6px solid var(--lux);
-padding:2.2rem;border-radius:16px;
-font-size:1.05rem;
+article h3{
+  font-size:1.45rem;
+  margin-top:2.4rem;
+  color:var(--lux);
 }
-.ad{
-margin:4rem 0;padding:2.2rem;
-background:#f1f5f9;border-radius:20px;
-text-align:center;color:#64748b;
+article p{
+  font-size:1.07rem;
+  margin-bottom:1.35rem;
+}
+article ul{
+  padding-left:1.4rem;
+}
+article li{
+  margin-bottom:.6rem;
 }
 aside{
-background:var(--card);border-radius:26px;
-padding:2.8rem;position:sticky;top:120px;
-box-shadow:0 25px 60px rgba(0,0,0,.06);
+  background:linear-gradient(180deg,#ffffff,#f1f5f9);
+  border-radius:22px;
+  padding:2.5rem;
+  height:fit-content;
+  box-shadow:0 25px 60px rgba(0,0,0,.06);
 }
-aside h4{margin-top:0}
+aside h4{
+  margin-top:0;
+  font-family:"Playfair Display",serif;
+}
 .contact{
-margin-top:5.5rem;padding:3.2rem;
-border-radius:22px;
-background:linear-gradient(135deg,#ecfeff,#f0fdfa);
+  margin-top:5rem;
+  padding:2.8rem;
+  border-radius:20px;
+  background:linear-gradient(135deg,#ecfeff,#f0fdfa);
+  border:1px solid #99f6e4;
 }
 footer{
-background:#020617;color:#cbd5f5;
-text-align:center;padding:3.2rem;
+  background:#020617;
+  color:#cbd5f5;
+  text-align:center;
+  padding:3rem 1.5rem;
+  font-size:.95rem;
 }
-footer a{color:var(--gold)}
-@media(max-width:1100px){
-main{grid-template-columns:1fr}
-header h1{font-size:2.6rem}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:1000px){
+  main{grid-template-columns:1fr}
+  header h1{font-size:2.4rem}
 }
 </style>
 </head>
@@ -128,79 +140,147 @@ header h1{font-size:2.6rem}
 <header>
 <h1>Anesthesia and Cognitive Outcomes</h1>
 <p>
-An elite, physician-authored, evidence-based medical authority
-on perioperative neuroscience and cognitive health.
+A definitive, long-form, evidence-based review exploring how anesthetic exposure,
+surgical stress, and perioperative physiology influence cognition, delirium,
+and long-term neurocognitive health.
 </p>
 </header>
 
-<nav id="nav">
-<a href="#summary">Summary</a>
+<nav>
 <a href="#intro">Introduction</a>
+<a href="#history">Historical Perspective</a>
 <a href="#mechanisms">Mechanisms</a>
+<a href="#types">Anesthetic Techniques</a>
 <a href="#delirium">Delirium</a>
 <a href="#pocd">POCD</a>
+<a href="#elderly">Elderly</a>
 <a href="#prevention">Prevention</a>
-<a href="#faq">FAQ</a>
-<a href="#references">References</a>
-<span class="toggle" onclick="toggleDark()">🌙</span>
+<a href="#future">Future</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <main>
-
 <article>
-
-<section id="summary" class="summary">
-<strong>AI-Generated Clinical Summary:</strong><br>
-Anesthesia-related cognitive outcomes range from transient delirium to persistent
-postoperative cognitive dysfunction. Risk is influenced by age, baseline cognition,
-surgical stress, anesthetic depth, and neuroinflammation. Evidence supports targeted
-prevention strategies and individualized anesthetic care.
-</section>
 
 <section id="intro">
 <h2>Introduction</h2>
 <p>
-Modern anesthesia has transformed surgery into a safe and humane discipline.
-However, its interaction with the brain remains complex, particularly in elderly
-and vulnerable populations. Cognitive outcomes now represent a critical quality
-metric in perioperative medicine.
+Anesthesia represents one of the greatest achievements in modern medicine, enabling
+complex surgical interventions while alleviating pain and distress. However, as
+surgical populations age and survivorship improves, attention has shifted beyond
+immediate perioperative outcomes toward subtler yet clinically significant
+neurocognitive sequelae.
+</p>
+<p>
+Postoperative cognitive disturbances range from transient delirium to persistent
+postoperative cognitive dysfunction (POCD). These entities are now recognized not
+as rare complications, but as frequent and impactful outcomes influencing recovery,
+quality of life, healthcare costs, and long-term morbidity.
+</p>
+<p>
+This comprehensive review synthesizes current evidence on anesthesia-related
+cognitive outcomes, integrating neuroscience, anesthetic pharmacology,
+perioperative medicine, and preventive strategies.
 </p>
 </section>
 
-<div class="ad">AdSense – Above the Fold (Responsive)</div>
+<section id="history">
+<h2>Historical Perspective</h2>
+<p>
+Early anesthetic practice largely focused on survival and analgesia, with little
+consideration for neurocognitive effects. Ether and chloroform were celebrated for
+their ability to abolish consciousness, and postoperative confusion was considered
+an inevitable, benign phenomenon.
+</p>
+<p>
+By the late twentieth century, systematic neuropsychological testing revealed that
+cognitive decline following surgery could persist for weeks to months. The landmark
+International Study of Postoperative Cognitive Dysfunction established POCD as a
+distinct clinical entity.
+</p>
+<p>
+Modern research now frames perioperative cognitive disorders as multifactorial,
+influenced by patient vulnerability, surgical stress, inflammatory responses, and
+anesthetic management.
+</p>
+</section>
 
 <section id="mechanisms">
-<h2>Neurobiological Mechanisms</h2>
-<h3>Inflammation and Microglia</h3>
+<h2>Pathophysiological Mechanisms</h2>
+<h3>Neuroinflammation</h3>
 <p>
-Surgical trauma induces systemic inflammation, enabling cytokine penetration into
-the central nervous system and activation of microglial pathways that impair synaptic
-plasticity.
+Surgical trauma triggers systemic inflammatory cascades characterized by cytokine
+release, endothelial activation, and blood-brain barrier permeability. These
+mediators promote microglial activation, synaptic dysfunction, and neuronal stress,
+providing a biological substrate for cognitive impairment.
 </p>
-<h3>Neurotransmitter Disruption</h3>
+
+<h3>Neurotransmitter Imbalance</h3>
 <p>
-Cholinergic deficiency, GABAergic imbalance, and glutamate excitotoxicity contribute
-to attention deficits and executive dysfunction.
+Anesthetic agents modulate GABAergic, glutamatergic, cholinergic, and dopaminergic
+systems. Disruption of acetylcholine transmission, in particular, is strongly linked
+to delirium and attentional deficits.
+</p>
+
+<h3>Cerebral Perfusion and Oxygenation</h3>
+<p>
+Intraoperative hypotension, anemia, and impaired autoregulation compromise cerebral
+oxygen delivery. Even brief episodes of hypoperfusion may exert disproportionate
+effects in vulnerable brains.
+</p>
+</section>
+
+<section id="types">
+<h2>Anesthetic Techniques and Cognitive Impact</h2>
+<p>
+General anesthesia induces global cortical suppression, whereas regional and neuraxial
+techniques preserve consciousness and minimize systemic drug exposure. Comparative
+studies suggest potential cognitive benefits of regional anesthesia, although results
+remain heterogeneous.
+</p>
+<p>
+Depth of anesthesia monitoring, multimodal analgesia, and avoidance of excessive
+sedation are increasingly recognized as modifiable factors influencing outcomes.
 </p>
 </section>
 
 <section id="delirium">
 <h2>Postoperative Delirium</h2>
 <p>
-Delirium is an acute fluctuating syndrome affecting up to half of elderly surgical
-patients and is independently associated with increased mortality, institutionalization,
-and long-term cognitive decline.
+Delirium is an acute, fluctuating disturbance of attention and awareness, frequently
+occurring within days of surgery. It is independently associated with prolonged
+hospitalization, institutionalization, and mortality.
+</p>
+<p>
+Prevention requires a multidisciplinary approach encompassing pain control,
+sleep hygiene, early mobilization, visual and hearing aids, and judicious medication
+use.
 </p>
 </section>
 
-<div class="ad">AdSense – Mid Article</div>
-
 <section id="pocd">
-<h2>Postoperative Cognitive Dysfunction</h2>
+<h2>Postoperative Cognitive Dysfunction (POCD)</h2>
 <p>
-POCD presents as persistent impairment in memory and executive function, often detected
-only by formal neuropsychological testing. While frequently reversible, it may accelerate
-neurodegenerative trajectories in susceptible individuals.
+POCD represents a more subtle but persistent decline in memory, executive function,
+and processing speed. Its diagnosis relies on formal neuropsychological testing and
+longitudinal assessment.
+</p>
+<p>
+Although often reversible, POCD may accelerate underlying neurodegenerative processes
+in susceptible individuals.
+</p>
+</section>
+
+<section id="elderly">
+<h2>Cognitive Outcomes in the Elderly</h2>
+<p>
+Advanced age remains the strongest predictor of adverse neurocognitive outcomes.
+Age-related neuronal vulnerability, reduced cognitive reserve, and comorbid disease
+converge to amplify perioperative risk.
+</p>
+<p>
+Tailored anesthetic plans, meticulous physiological control, and geriatric-focused
+perioperative care models are essential.
 </p>
 </section>
 
@@ -208,38 +288,31 @@ neurodegenerative trajectories in susceptible individuals.
 <h2>Prevention and Neuroprotection</h2>
 <ul>
 <li>Preoperative cognitive screening</li>
-<li>Depth-of-anesthesia monitoring</li>
+<li>Avoidance of deep anesthesia</li>
 <li>Hemodynamic stability</li>
-<li>Multimodal opioid-sparing analgesia</li>
+<li>Multimodal, opioid-sparing analgesia</li>
 <li>Delirium prevention bundles</li>
 </ul>
-</section>
-
-<section id="faq">
-<h2>Frequently Asked Questions</h2>
-<h3>Does anesthesia cause permanent memory loss?</h3>
 <p>
-In most patients, cognitive changes are temporary. Persistent deficits occur primarily
-in elderly or high-risk individuals with preexisting vulnerability.
-</p>
-<h3>Is regional anesthesia safer for the brain?</h3>
-<p>
-Regional techniques may reduce cognitive risk in selected patients by limiting systemic
-drug exposure, though outcomes depend on multiple factors.
+Emerging research explores pharmacologic neuroprotection, anti-inflammatory strategies,
+and precision anesthesia guided by biomarkers.
 </p>
 </section>
 
-<section id="references">
-<h2>Key References</h2>
-<ol>
-<li><a href="https://pubmed.ncbi.nlm.nih.gov/32619755/" target="_blank">Evered L et al. Br J Anaesth.</a></li>
-<li><a href="https://pubmed.ncbi.nlm.nih.gov/30710644/" target="_blank">Safavynia SA et al. Anesthesiology.</a></li>
-<li><a href="https://pubmed.ncbi.nlm.nih.gov/30871922/" target="_blank">Inouye SK. N Engl J Med.</a></li>
-<li><a href="https://pubmed.ncbi.nlm.nih.gov/26068225/" target="_blank">Chan MT et al. Lancet.</a></li>
-</ol>
+<section id="future">
+<h2>Future Directions</h2>
+<p>
+The future of perioperative neuroscience lies in individualized care. Integration of
+genomics, advanced neuromonitoring, artificial intelligence, and long-term cognitive
+tracking promises to redefine anesthetic safety.
+</p>
+<p>
+Anesthesia will increasingly be judged not only by intraoperative stability, but by
+its capacity to preserve cognition and functional independence.
+</p>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
 <p>
 <strong>Dr Rahul Biswas</strong><br>
 Consultant, GNRC Hospital<br>
@@ -250,16 +323,13 @@ Consultant, GNRC Hospital<br>
 </article>
 
 <aside>
-<h4>Authority Signals</h4>
+<h4>Editorial Standards</h4>
 <p>
-✔ Physician-authored<br>
-✔ PubMed-linked evidence<br>
-✔ Medical schema<br>
-✔ AdSense compliant<br>
-✔ Core Web Vitals optimized
+Content adheres to international medical publishing principles,
+emphasizing accuracy, neutrality, evidence-based synthesis,
+and patient safety.
 </p>
 </aside>
-
 </main>
 
 <footer>
@@ -269,24 +339,6 @@ Consultant, GNRC Hospital<br>
 <a href="disclaimer.html">Disclaimer</a>
 </p>
 </footer>
-
-<script>
-function toggleDark(){
-document.body.classList.toggle("dark");
-}
-const sections=document.querySelectorAll("section");
-const links=document.querySelectorAll("nav a");
-window.addEventListener("scroll",()=>{
-let current="";
-sections.forEach(s=>{
-if(scrollY>=s.offsetTop-160){current=s.id;}
-});
-links.forEach(l=>{
-l.classList.remove("active");
-if(l.getAttribute("href")==="#"+current){l.classList.add("active");}
-});
-});
-</script>
 
 </body>
 </html>
